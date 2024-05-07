@@ -193,18 +193,6 @@ nav ul li a:hover {
   margin-right: 50px;
 }
 
-@media (max-width: 900px) {
-  .about-us-block {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .about-us-text {
-    margin-bottom: 50px;
-    margin-right: 0;
-  }
-}
-
 .about-us-text h2 {
   padding: 20px 0;
 }
@@ -224,6 +212,27 @@ nav ul li a:hover {
   width: 100%;
   height: 100%;
 }
+
+/****************** about us - mediaqueries ******************/
+
+@media (max-width: 900px) {
+  .about-us-block {
+    flex-direction: column;
+  }
+
+  .about-us-text {
+    width: 150%;
+    margin-bottom: 50px;
+    margin-right: 0;
+  }
+  .about-us-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150%;
+  }
+}
+
 /*********************************************************************************************
 *********************************** WHAT WE DO SECTION ***************************************
 *********************************************************************************************/
