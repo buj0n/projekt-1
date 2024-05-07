@@ -103,8 +103,8 @@ nav ul {
 }
 
 .responsive-nav img {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 }
 
 nav li {
@@ -140,6 +140,7 @@ nav li a:hover {
 
   .responsive-nav {
     display: block;
+    right: 50px;
   }
 }
 
@@ -172,7 +173,7 @@ nav li a:hover {
 @media (max-width: 900px) {
   .hero-img-main-heading {
     top: 625px;
-    right: 20px;
+    right: 50px;
     max-width: 200px;
   }
 
