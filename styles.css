@@ -15,6 +15,7 @@
   --nav-white-color: #fff;
 
   /* Pozadí */
+  --bg-body-color: #ededed;
   --bg-color-first: #33292a;
   --bg-color-second: #644b4f;
   --bg-color-third: #333333;
@@ -26,17 +27,19 @@
 
   /* Ostatní*/
   --white-color: #fff;
+  --black-color: #000;
 }
 
 body {
   /* max-width: 1440px;
   margin: auto; */
-  background-color: var(--bg-color-fourth);
+  background-color: var(--bg-body-color);
 }
 
 /* Nastavení maximální možné šířky stránky */
 .main,
-.full-img {
+.full-img,
+.about-us {
   max-width: 1440px;
   margin: auto;
 }
@@ -50,6 +53,11 @@ body {
 h1 {
   font-size: 96px;
   color: var(--white-color);
+}
+
+h2 {
+  font-size: 32px;
+  color: var(--black-color);
 }
 
 /****************** HEADER + NAVIGATION ******************/
@@ -103,9 +111,42 @@ nav ul li a:hover {
   position: absolute;
   text-align: right;
   width: 451px;
-  height: 339px;
+  height: 5vh;
   font-weight: 700;
   line-height: 112.5px;
   top: 390px;
-  left: 705px;
+  right: 100px;
+}
+
+/****************** ABOUT US SECTION ******************/
+
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: var(--bg-color-fourth);
+}
+
+.about-us-text {
+  width: 30%;
+  margin-right: 50px;
+}
+
+.about-us-text h2 {
+  padding: 20px 0;
+}
+
+.about-us-text p {
+  text-align: justify;
+}
+
+.about-us-image-container {
+  width: 30%;
+}
+
+.about-us-image-container img {
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
 }
