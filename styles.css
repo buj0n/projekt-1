@@ -57,6 +57,10 @@ h1 {
 header {
   width: 100%;
   background: var(--nav-bg-color);
+  display: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
 nav {
@@ -97,4 +101,11 @@ nav ul li a:hover {
 
 .full-img-main-heading {
   position: absolute;
+  text-align: right;
+  width: 451px;
+  height: 339px;
+  font-weight: 700;
+  line-height: 112.5px;
+  top: 390px;
+  left: 705px;
 }
