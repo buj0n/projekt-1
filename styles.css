@@ -140,7 +140,7 @@ nav li a:hover {
 
   .responsive-nav {
     display: block;
-    right: 50px;
+    right: 30px;
   }
 }
 
@@ -173,7 +173,7 @@ nav li a:hover {
 @media (max-width: 900px) {
   .hero-img-main-heading {
     top: 625px;
-    right: 50px;
+    right: 30px;
     max-width: 200px;
   }
 
