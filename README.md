@@ -1,0 +1,2 @@
+- Web jsem začal psát stylem "Mobile first".
+- Je nahráno několik verzí, s tím, že finální začala být tvořena po lekci flexboxu 9.5.2024
