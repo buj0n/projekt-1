@@ -46,18 +46,35 @@ body {
 /********************** ELEMENTS SPACING ***********************/
 
 /* default margin & padding for sections - mobiles */
-.section-mobile {
+.content-mobile {
   padding: 50px 20px;
+}
+
+@media (min-width: 768px) {
+  .content-desktop {
+    position: relative;
+    max-width: 1080px;
+    margin: auto;
+  }
 }
 
 /************************** HEADINGS ***************************/
 
+/* MOBILE VIEWPORT */
+
+h1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: var(--light-color);
+}
 .h2-dark {
   color: var(--black-color);
+  text-align: center;
 }
 
 .h2-light {
   color: var(--light-color);
+  text-align: center;
 }
 
 h3 {
@@ -67,6 +84,18 @@ h3 {
 
 .h3-dark {
   color: var(--dark-color);
+}
+
+/* DESKTOP VIEWPORT */
+
+@media (min-width: 768px) {
+  .h2-dark,
+  .h2-light {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+  }
 }
 
 /************************* PARAGRAPHS **************************/
@@ -94,6 +123,9 @@ p {
 /*********************************************************************************************
 ************************************ HEADER + NAVIGATION *************************************
 *********************************************************************************************/
+header {
+  min-height: 68px;
+}
 
 /* MOBILE VIEWPORT */
 
@@ -103,8 +135,40 @@ p {
   padding: 10px 20px;
 }
 
+.desktop-navigation {
+  display: none;
+}
+
 /* TABLET VIEWPORT */
+
 /* DESKTOP VIEWPORT */
+
+@media (min-width: 768px) {
+  .mobile-menu-icon {
+    display: none;
+  }
+
+  .desktop-navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  .desktop-navigation li {
+    padding: 24px 10px;
+    list-style: none;
+  }
+
+  .desktop-navigation a {
+    color: var(--light-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom ease 1s, color ease 1s;
+  }
+
+  .desktop-navigation a:hover {
+    color: var(--a-hover-color);
+    border-bottom: 1px solid var(--light-color);
+  }
+}
 
 /*********************************************************************************************
 ************************************** HERO SECTION **************************************
@@ -128,13 +192,18 @@ p {
   padding: 20px;
   text-align: right;
   max-width: 250px;
-  font-size: 45px;
-  font-weight: 700;
-  color: var(--light-color);
 }
 
 /* TABLET VIEWPORT */
+
 /* DESKTOP VIEWPORT */
+@media (min-width: 768px) {
+  .hero-content h1 {
+    max-width: 520px;
+    font-size: 96px;
+    top: 350px;
+  }
+}
 
 /*********************************************************************************************
 ************************************* ABOUT US SECTION ***************************************
@@ -152,7 +221,22 @@ p {
   border-radius: 5px;
 }
 /* TABLET VIEWPORT */
+
 /* DESKTOP VIEWPORT */
+
+@media (min-width: 768px) {
+  .about-us-box {
+    display: flex;
+    gap: 50px;
+  }
+
+  .about-us-text-box {
+    width: 48%;
+  }
+  .about-us-image {
+    width: 48%;
+  }
+}
 
 /*********************************************************************************************
 *********************************** WHAT WE DO SECTION ***************************************
@@ -182,7 +266,14 @@ p {
 }
 
 /* TABLET VIEWPORT */
+
 /* DESKTOP VIEWPORT */
+
+@media (min-width: 768px) {
+  .what-we-do-icons {
+    flex-direction: row;
+  }
+}
 
 /*********************************************************************************************
 *********************************** OUR TRIPS ************************************************
@@ -237,16 +328,30 @@ p {
   color: var(--dark-color);
   border-radius: 5px;
   font-weight: 700;
-  /* transition: background-color ease 1s, color ease 0.5s; */
 }
 
 /* TABLET VIEWPORT */
 /* DESKTOP VIEWPORT */
 
-/* .btn-contact-us a:hover {
-  background-color: var(--a-hover-color);
-  color: var(--light-color);
-} */
+@media (min-width: 768px) {
+  .where-do-you-go-box {
+    display: flex;
+  }
+
+  .where-do-you-go-box-p-btn {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+  }
+
+  .btn-contact-us a {
+    transition: background-color ease 1s, color ease 0.5s;
+  }
+  .btn-contact-us a:hover {
+    background-color: var(--a-hover-color);
+    color: var(--light-color);
+  }
+}
 
 /*********************************************************************************************
 ****************************************** REVIEWS *******************************************
@@ -284,6 +389,14 @@ p {
 /* TABLET VIEWPORT */
 /* DESKTOP VIEWPORT */
 
+@media (min-width: 768px) {
+  .reviews-users-box {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
 /*********************************************************************************************
 ****************************************** FOOTER GALLERY ************************************
 *********************************************************************************************/
@@ -292,7 +405,10 @@ p {
 
 .footer-gallery-img-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer-gallery-item {
   width: 100%;
 }
 
@@ -303,7 +419,14 @@ p {
 }
 
 /* TABLET VIEWPORT */
+
 /* DESKTOP VIEWPORT */
+
+@media (min-width: 768px) {
+  .footer-gallery-item {
+    flex: 1 1 50%;
+  }
+}
 
 /*********************************************************************************************
 ****************************************** CONTACT *******************************************

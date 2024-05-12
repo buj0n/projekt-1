@@ -11,10 +11,9 @@
     <title>Your Travel Assistant</title>
   </head>
 
-  <!-- TODO: Upravit názvy textboxů na jednu společnou třídu, sekce mají společné vlastnosti -->
   <body>
     <!-- *************************** MAIN NAVIGATION *************************** -->
-    <header>
+    <header class="bg-dark-brown">
       <nav>
         <!-- *************************** Mobile / Tablet menu *************************** -->
 
@@ -23,6 +22,13 @@
         </div>
 
         <!-- *************************** Desktop menu *************************** -->
+        <ul class="desktop-navigation content-desktop">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">What We Do</a></li>
+          <li><a href="#">Our Trips</a></li>
+          <li><a href="#">Where To Go</a></li>
+          <li><a href="#">Reviews</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -30,72 +36,81 @@
 
     <section class="hero-section">
       <div class="hero-content">
-        <h1>Your Travel Assistant</h1>
+        <div class="content-desktop">
+          <h1>Your Travel Assistant</h1>
+        </div>
       </div>
     </section>
 
     <!-- *************************** ABOUT US SECTION *************************** -->
 
-    <section class="section-mobile">
-      <h2 class="h2-dark">About Us</h2>
-      <p class="p-padding-mobile">
-        Leigh McAdam is a Calgary-based writer, photographer and social media
-        enthusiast with over 48,000 followers. Her blog: HikeBikeTravel is
-        frequently cited as one of the top travel and outdoor adventure blogs in
-        Canada, and consistently receives over 135,000 monthly page views. She
-        shares her enthusiasm for the outdoors as a brand ambassador for
-        Sporting Life, and has worked on campaigns for Travel Alberta, Expedia
-        and Flight Hub. Leigh is the author of Discover Canada: 100 Inspiring
-        Outdoor Adventures. Currently, she is co-authoring: 125 Nature Hot Spots
-        in Alberta (spring 2018). A true adventurer, Leigh will try anything
-        once, except perhaps bungee jumping.
-      </p>
-      <div class="about-us-image">
-        <img
-          src="./images/anneliese-phillips-uv4-vl3liKM-unsplash.jpg"
-          alt=""
-        />
+    <section class="content-mobile">
+      <div class="about-us-box content-desktop">
+        <div class="about-us-text-box">
+          <h2 class="h2-dark">About Us</h2>
+          <p class="p-padding-mobile">
+            Leigh McAdam is a Calgary-based writer, photographer and social
+            media enthusiast with over 48,000 followers. Her blog:
+            HikeBikeTravel is frequently cited as one of the top travel and
+            outdoor adventure blogs in Canada, and consistently receives over
+            135,000 monthly page views. She shares her enthusiasm for the
+            outdoors as a brand ambassador for Sporting Life, and has worked on
+            campaigns for Travel Alberta, Expedia and Flight Hub. Leigh is the
+            author of Discover Canada: 100 Inspiring Outdoor Adventures.
+            Currently, she is co-authoring: 125 Nature Hot Spots in Alberta
+            (spring 2018). A true adventurer, Leigh will try anything once,
+            except perhaps bungee jumping.
+          </p>
+        </div>
+        <div class="about-us-image">
+          <img
+            src="./images/anneliese-phillips-uv4-vl3liKM-unsplash.jpg"
+            alt=""
+          />
+        </div>
       </div>
     </section>
 
     <!-- *************************** WHAT WE DO SECTION *************************** -->
 
-    <section class="section-mobile bg-dark-brown">
-      <h2 class="h2-light">What we Do</h2>
-      <p class="p-padding-mobile p-light">
-        Opportunities for challenging hikes and pleasant strolls are scattered
-        all over this planet; you just need to know where to find them. We do.
-        Kilimanjaro, Everest Base Camp, Patagonia, and the Inca Trail are out
-        there, waiting for you to walk all over them. We’re proud of our record
-        of successful ascents (over 92% of our travellers make it to the top of
-        Kili, depending on the route), but it’s our CEOs and local guides that
-        make the journey itself as memorable as the summit. And if you’re not
-        into big climbs, don’t sweat it; we’ve got loads of lower-impact walks
-        and iconic treks you’ll love, too.
-      </p>
-      <div class="what-we-do-icons">
-        <div class="icon">
-          <img src="./icons/hiking-white.png" alt="Hiking icon" />
-          <h3>Hiking</h3>
-        </div>
-        <div class="icon">
-          <img src="./icons/cycle-white.png" alt=" Cycling icon" />
-          <h3>Cycling</h3>
-        </div>
-        <div class="icon">
-          <img src="./icons/water-white.png" alt="Surfing icon" />
-          <h3>Surfing</h3>
-        </div>
-        <div class="icon">
-          <img src="./icons/car-white.png" alt="Car icon" />
-          <h3>Car trips</h3>
+    <section class="content-mobile bg-dark-brown">
+      <div class="content-desktop">
+        <h2 class="h2-light">What we Do</h2>
+        <p class="p-padding-mobile p-light">
+          Opportunities for challenging hikes and pleasant strolls are scattered
+          all over this planet; you just need to know where to find them. We do.
+          Kilimanjaro, Everest Base Camp, Patagonia, and the Inca Trail are out
+          there, waiting for you to walk all over them. We’re proud of our
+          record of successful ascents (over 92% of our travellers make it to
+          the top of Kili, depending on the route), but it’s our CEOs and local
+          guides that make the journey itself as memorable as the summit. And if
+          you’re not into big climbs, don’t sweat it; we’ve got loads of
+          lower-impact walks and iconic treks you’ll love, too.
+        </p>
+        <div class="what-we-do-icons">
+          <div class="icon">
+            <img src="./icons/hiking-white.png" alt="Hiking icon" />
+            <h3>Hiking</h3>
+          </div>
+          <div class="icon">
+            <img src="./icons/cycle-white.png" alt=" Cycling icon" />
+            <h3>Cycling</h3>
+          </div>
+          <div class="icon">
+            <img src="./icons/water-white.png" alt="Surfing icon" />
+            <h3>Surfing</h3>
+          </div>
+          <div class="icon">
+            <img src="./icons/car-white.png" alt="Car icon" />
+            <h3>Car trips</h3>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- *************************** OUR TRIPS SECTION *************************** -->
 
-    <section class="our-trips section-mobile">
+    <section class="our-trips content-mobile">
       <div class="image-gallery">
         <img src="./images/simon-english-48nerZQCHgo-unsplash.jpg" alt="" />
         <img src="./images/james-wheeler-ZOA-cqKuJAA-unsplash.jpg" alt="" />
@@ -113,65 +128,74 @@
 
     <!-- *************************** WHERE DO YOU GO SECTION *************************** -->
 
-    <section class="section-mobile bg-light-brown">
-      <h2 class="h2-light">Where do you want to go?</h2>
-
-      <p class="p-padding-mobile p-light">
-        You’ll find 21 detailed adventure guides, over a hundred practical
-        travel tips, book reviews on anything outdoors related, packing lists on
-        a range of outdoor activities including kayaking, backpacking and
-        camping as well as honest hotel and B&B reviews.
-      </p>
-      <p class="p-padding-mobile p-light">Contact us and we will help you!</p>
-      <div class="btn-contact-us"><a href="#">CONTACT US</a></div>
+    <section class="content-mobile bg-light-brown">
+      <div class="where-do-you-go-box content-desktop">
+        <h2 class="h2-light">Where do you want to go?</h2>
+        <div class="where-do-you-go-box-p-btn">
+          <p class="p-padding-mobile p-light">
+            You’ll find 21 detailed adventure guides, over a hundred practical
+            travel tips, book reviews on anything outdoors related, packing
+            lists on a range of outdoor activities including kayaking,
+            backpacking and camping as well as honest hotel and B&B reviews.
+          </p>
+          <p class="p-padding-mobile p-light">
+            Contact us and we will help you!
+          </p>
+          <div class="btn-contact-us"><a href="#">CONTACT US</a></div>
+        </div>
+      </div>
     </section>
 
     <!-- *************************** REVIEWS SECTION *************************** -->
 
-    <section class="section-mobile">
-      <h2 class="h2-dark">Reviews</h2>
-      <p class="p-padding-mobile">
-        Our amazing clients are the reason we exist, and their reactions to our
-        customized travel experiences and personalized service keep us smiling
-        all day long. Here is just a sampling of what they’ve said:
-      </p>
-      <div class="reviews-users">
-        <div class="reviews-user-image">
-          <img
-            src="./images/kalen-emsley-kGSapVfg8Kw-unsplash.jpg"
-            alt="Kalen Profile Picture"
-          />
-        </div>
-        <div class="reviews-user-text">
-          <p>
-            She has booked two major European trips for us in the past year and
-            every aspect has met, and in most cases exceeded, our expectations.
-            Best prices, best hotels, best itineraries, and best cruises, she
-            does it all. But the most important thing is she remembers the
-            little things that we would do if we were making the plans
-            ourselves.
-          </p>
-        </div>
-        <div class="reviews-user-name"><p>Bertie Norton</p></div>
+    <section class="content-mobile content-desktop">
+      <div class="content-desktop">
+        <h2 class="h2-dark">Reviews</h2>
+        <p class="p-padding-mobile">
+          Our amazing clients are the reason we exist, and their reactions to
+          our customized travel experiences and personalized service keep us
+          smiling all day long. Here is just a sampling of what they’ve said:
+        </p>
       </div>
-      <div class="reviews-users">
-        <div class="reviews-user-image">
-          <img
-            src="./images/jeffrey-keenan-pUhxoSapPFA-unsplash.jpg"
-            alt="Kalen Profile Picture"
-          />
+      <div class="reviews-users-box">
+        <div class="reviews-users">
+          <div class="reviews-user-image">
+            <img
+              src="./images/kalen-emsley-kGSapVfg8Kw-unsplash.jpg"
+              alt="Kalen Profile Picture"
+            />
+          </div>
+          <div class="reviews-user-text">
+            <p>
+              She has booked two major European trips for us in the past year
+              and every aspect has met, and in most cases exceeded, our
+              expectations. Best prices, best hotels, best itineraries, and best
+              cruises, she does it all. But the most important thing is she
+              remembers the little things that we would do if we were making the
+              plans ourselves.
+            </p>
+          </div>
+          <div class="reviews-user-name"><p>Bertie Norton</p></div>
         </div>
-        <div class="reviews-user-text">
-          <p>
-            She has booked two major European trips for us in the past year and
-            every aspect has met, and in most cases exceeded, our expectations.
-            Best prices, best hotels, best itineraries, and best cruises, she
-            does it all. But the most important thing is she remembers the
-            little things that we would do if we were making the plans
-            ourselves.
-          </p>
+        <div class="reviews-users">
+          <div class="reviews-user-image">
+            <img
+              src="./images/jeffrey-keenan-pUhxoSapPFA-unsplash.jpg"
+              alt="Kalen Profile Picture"
+            />
+          </div>
+          <div class="reviews-user-text">
+            <p>
+              Leigh McAdam has been making my travel arrangements for about 20
+              years and there is no one else I would trust to arrange my trips
+              and tours. I've also had great fun on a few of the group trips she
+              has arranged - Peru & Machu Picchu and a 10-day cruise out of
+              Venice and diving. It's always an eclectic group of well traveled,
+              interesting people.
+            </p>
+          </div>
+          <div class="reviews-user-name"><p>Frank Kinney</p></div>
         </div>
-        <div class="reviews-user-name"><p>Frank Kinney</p></div>
       </div>
     </section>
 
@@ -180,27 +204,35 @@
 
       <section class="footer-gallery">
         <div class="footer-gallery-img-container">
-          <img
-            src="./images/alexey-fedenkov-BaCZYH9RLmQ-unsplash.jpg"
-            alt="Beach"
-          />
-          <img
-            src="./images/omer-salom-LoijtQXXNhs-unsplash.jpg"
-            alt="Mountains"
-          />
-          <img
-            src="./images/vincentiu-solomon-7MH4ped6_Mo-unsplash.jpg"
-            alt="Lakehouse"
-          />
-          <img
-            src="./images/daniel-tseng-73lmMKhi2U8-unsplash.jpg"
-            alt="Forest"
-          />
+          <div class="footer-gallery-item">
+            <img
+              src="./images/alexey-fedenkov-BaCZYH9RLmQ-unsplash.jpg"
+              alt="Beach"
+            />
+          </div>
+          <div class="footer-gallery-item">
+            <img
+              src="./images/omer-salom-LoijtQXXNhs-unsplash.jpg"
+              alt="Mountains"
+            />
+          </div>
+          <div class="footer-gallery-item">
+            <img
+              src="./images/vincentiu-solomon-7MH4ped6_Mo-unsplash.jpg"
+              alt="Lakehouse"
+            />
+          </div>
+          <div class="footer-gallery-item">
+            <img
+              src="./images/daniel-tseng-73lmMKhi2U8-unsplash.jpg"
+              alt="Forest"
+            />
+          </div>
         </div>
       </section>
 
       <!-- *************************** CONTACT *************************** -->
-      <section class="section-mobile contact">
+      <section class="content-mobile contact">
         <div class="contact-btn">
           <a href="#">Contact</a>
         </div>
