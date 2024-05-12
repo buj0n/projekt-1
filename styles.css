@@ -237,16 +237,16 @@ p {
   color: var(--dark-color);
   border-radius: 5px;
   font-weight: 700;
-  transition: background-color ease 1s, color ease 0.5s;
-}
-
-.btn-contact-us a:hover {
-  background-color: var(--a-hover-color);
-  color: var(--light-color);
+  /* transition: background-color ease 1s, color ease 0.5s; */
 }
 
 /* TABLET VIEWPORT */
 /* DESKTOP VIEWPORT */
+
+/* .btn-contact-us a:hover {
+  background-color: var(--a-hover-color);
+  color: var(--light-color);
+} */
 
 /*********************************************************************************************
 ****************************************** REVIEWS *******************************************
@@ -288,6 +288,8 @@ p {
 ****************************************** FOOTER GALLERY ************************************
 *********************************************************************************************/
 
+/* MOBILE VIEWPORT */
+
 .footer-gallery-img-container {
   display: flex;
   flex-direction: column;
@@ -300,9 +302,15 @@ p {
   object-fit: cover;
 }
 
+/* TABLET VIEWPORT */
+/* DESKTOP VIEWPORT */
+
 /*********************************************************************************************
 ****************************************** CONTACT *******************************************
 *********************************************************************************************/
+
+/* MOBILE VIEWPORT */
+
 .contact {
   background-color: var(--bg-color-third);
   padding: 50px 20px;
@@ -316,14 +324,23 @@ p {
   color: var(--a-normal-color);
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  transition: color ease 0.5s, border-color ease 1s;
-}
-
-.contact-btn a:hover {
-  color: var(--a-hover-color);
-  border-bottom-color: var(--light-color);
 }
 
 .contact-rights {
   color: var(--light-color);
+  text-align: center;
+}
+
+/* TABLET VIEWPORT */
+
+/* DESKTOP VIEWPORT */
+
+@media (min-width: 768px) {
+  .contact-btn a {
+    transition: color ease 0.5s, border-color ease 1s;
+  }
+  .contact-btn a:hover {
+    color: var(--a-hover-color);
+    border-bottom-color: var(--light-color);
+  }
 }
