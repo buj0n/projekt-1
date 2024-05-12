@@ -10,17 +10,22 @@
     <link rel="icon" type="image/x-icon" href="./icons/favicon.ico" />
     <title>Your Travel Assistant</title>
   </head>
+
+  <!-- TODO: Upravit názvy textboxů na jednu společnou třídu, sekce mají společné vlastnosti -->
   <body>
     <!-- *************************** MAIN NAVIGATION *************************** -->
     <header>
-      <!-- *************************** Mobile / Tablet menu *************************** -->
       <nav>
-        <div class="mobile-menu">
+        <!-- *************************** Mobile / Tablet menu *************************** -->
+
+        <div class="mobile-menu-icon bg-dark-brown">
           <img src="./icons/ham-menu.png" alt="Mobile / Tablet menu" />
         </div>
+
         <!-- *************************** Desktop menu *************************** -->
       </nav>
     </header>
+
     <!-- *************************** HERO SECTION *************************** -->
 
     <section class="hero-section">
@@ -30,22 +35,21 @@
     </section>
 
     <!-- *************************** ABOUT US SECTION *************************** -->
-    <section class="about-us">
-      <div class="about-us-text">
-        <h2 class="h2-dark">About Us</h2>
-        <p class="p-dark">
-          Leigh McAdam is a Calgary-based writer, photographer and social media
-          enthusiast with over 48,000 followers. Her blog: HikeBikeTravel is
-          frequently cited as one of the top travel and outdoor adventure blogs
-          in Canada, and consistently receives over 135,000 monthly page views.
-          She shares her enthusiasm for the outdoors as a brand ambassador for
-          Sporting Life, and has worked on campaigns for Travel Alberta, Expedia
-          and Flight Hub. Leigh is the author of Discover Canada: 100 Inspiring
-          Outdoor Adventures. Currently, she is co-authoring: 125 Nature Hot
-          Spots in Alberta (spring 2018). A true adventurer, Leigh will try
-          anything once, except perhaps bungee jumping.
-        </p>
-      </div>
+
+    <section class="section-mobile">
+      <h2 class="h2-dark">About Us</h2>
+      <p class="p-padding-mobile">
+        Leigh McAdam is a Calgary-based writer, photographer and social media
+        enthusiast with over 48,000 followers. Her blog: HikeBikeTravel is
+        frequently cited as one of the top travel and outdoor adventure blogs in
+        Canada, and consistently receives over 135,000 monthly page views. She
+        shares her enthusiasm for the outdoors as a brand ambassador for
+        Sporting Life, and has worked on campaigns for Travel Alberta, Expedia
+        and Flight Hub. Leigh is the author of Discover Canada: 100 Inspiring
+        Outdoor Adventures. Currently, she is co-authoring: 125 Nature Hot Spots
+        in Alberta (spring 2018). A true adventurer, Leigh will try anything
+        once, except perhaps bungee jumping.
+      </p>
       <div class="about-us-image-container">
         <img
           src="./images/anneliese-phillips-uv4-vl3liKM-unsplash.jpg"
@@ -55,21 +59,20 @@
     </section>
 
     <!-- *************************** WHAT WE DO SECTION *************************** -->
-    <section class="what-we-do">
-      <div class="what-we-do-text">
-        <h2 class="h2-light">What we Do</h2>
-        <p class="p-light">
-          Opportunities for challenging hikes and pleasant strolls are scattered
-          all over this planet; you just need to know where to find them. We do.
-          Kilimanjaro, Everest Base Camp, Patagonia, and the Inca Trail are out
-          there, waiting for you to walk all over them. We’re proud of our
-          record of successful ascents (over 92% of our travellers make it to
-          the top of Kili, depending on the route), but it’s our CEOs and local
-          guides that make the journey itself as memorable as the summit. And if
-          you’re not into big climbs, don’t sweat it; we’ve got loads of
-          lower-impact walks and iconic treks you’ll love, too.
-        </p>
-      </div>
+
+    <section class="section-mobile bg-dark-brown">
+      <h2 class="h2-light">What we Do</h2>
+      <p class="p-padding-mobile p-light">
+        Opportunities for challenging hikes and pleasant strolls are scattered
+        all over this planet; you just need to know where to find them. We do.
+        Kilimanjaro, Everest Base Camp, Patagonia, and the Inca Trail are out
+        there, waiting for you to walk all over them. We’re proud of our record
+        of successful ascents (over 92% of our travellers make it to the top of
+        Kili, depending on the route), but it’s our CEOs and local guides that
+        make the journey itself as memorable as the summit. And if you’re not
+        into big climbs, don’t sweat it; we’ve got loads of lower-impact walks
+        and iconic treks you’ll love, too.
+      </p>
       <div class="what-we-do-icons">
         <div class="icon">
           <img src="./icons/hiking-white.png" alt="Hiking icon" />
@@ -109,6 +112,7 @@
     <!-- *************************** WHERE DO YOU GO SECTION *************************** -->
     <section class="where-do-you-go">
       <div class="where-do-you-go-textbox">
+        <!-- TODO: Upravit box s nadpisem, nepotřebuje vlastní div, heading je blokový element -->
         <div class="where-do-you-go-heading">
           <h2 class="h2-light">Where do you want to go?</h2>
         </div>
@@ -126,5 +130,85 @@
         <div class="btn-contact-us"><a href="#">CONTACT US</a></div>
       </div>
     </section>
+    <section class="reviews">
+      <div class="reviews-textbox">
+        <h2 class="h2-dark">Reviews</h2>
+        <p>
+          Our amazing clients are the reason we exist, and their reactions to
+          our customized travel experiences and personalized service keep us
+          smiling all day long. Here is just a sampling of what they’ve said:
+        </p>
+      </div>
+      <div class="reviews-users">
+        <div class="reviews-user-image">
+          <img
+            src="./images/kalen-emsley-kGSapVfg8Kw-unsplash.jpg"
+            alt="Kalen Profile Picture"
+          />
+        </div>
+        <div class="reviews-user-text">
+          <p>
+            She has booked two major European trips for us in the past year and
+            every aspect has met, and in most cases exceeded, our expectations.
+            Best prices, best hotels, best itineraries, and best cruises, she
+            does it all. But the most important thing is she remembers the
+            little things that we would do if we were making the plans
+            ourselves.
+          </p>
+        </div>
+        <div class="reviews-user-name"><p>Bertie Norton</p></div>
+      </div>
+      <div class="reviews-users">
+        <div class="reviews-user-image">
+          <!-- TODO  dát správnou fotku uživatele -->
+          <img
+            src="./images/kalen-emsley-kGSapVfg8Kw-unsplash.jpg"
+            alt="Kalen Profile Picture"
+          />
+        </div>
+        <div class="reviews-user-text">
+          <p>
+            She has booked two major European trips for us in the past year and
+            every aspect has met, and in most cases exceeded, our expectations.
+            Best prices, best hotels, best itineraries, and best cruises, she
+            does it all. But the most important thing is she remembers the
+            little things that we would do if we were making the plans
+            ourselves.
+          </p>
+        </div>
+        <div class="reviews-user-name"><p>Frank Kinney</p></div>
+      </div>
+    </section>
+
+    <footer>
+      <section class="footer-gallery">
+        <div class="footer-gallery-img-container">
+          <img
+            src="./images/alexey-fedenkov-BaCZYH9RLmQ-unsplash.jpg"
+            alt="Beach"
+          />
+          <img
+            src="./images/omer-salom-LoijtQXXNhs-unsplash.jpg"
+            alt="Mountains"
+          />
+          <img
+            src="./images/vincentiu-solomon-7MH4ped6_Mo-unsplash.jpg"
+            alt="Lakehouse"
+          />
+          <img
+            src="./images/daniel-tseng-73lmMKhi2U8-unsplash.jpg"
+            alt="Forest"
+          />
+        </div>
+      </section>
+      <section class="contact">
+        <div class="contact-btn">
+          <a href="#">Contact</a>
+        </div>
+        <div class="contact-rights">
+          <p>&copy; 2024 Your Travel Assistant. All Rights Reserved.</p>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>

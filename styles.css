@@ -1,5 +1,5 @@
 /*********************************************************************************************
-************************************ DEFAULT VARIABLES ***************************************
+************************************ DEFAULT & REUSABLES VARIABLES ***************************************
 *********************************************************************************************/
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
@@ -12,10 +12,6 @@
 }
 
 :root {
-  /* Navigation colors */
-  --nav-bg-color: #33292a;
-  --nav-white-color: #fff;
-
   /* Background colors */
   --bg-body-color: #f2f2f2;
   --bg-color-first: #33292a;
@@ -35,25 +31,31 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background-color: var(--bg-body-color);
 }
 
-h1 {
-  font-size: 45px;
-  font-weight: 700;
-  color: var(--light-color);
+.bg-dark-brown {
+  background-color: var(--bg-color-first);
 }
 
-h2 {
-  font-size: 32px;
-  text-align: center;
+/********************** ELEMENTS SPACING ***********************/
+
+/* default margin & padding for sections - mobiles */
+.section-mobile {
+  padding: 50px 20px;
 }
+
+/************************** HEADINGS ***************************/
+
 .h2-dark {
+  padding: 0 5px;
   color: var(--black-color);
 }
 
 .h2-light {
+  padding: 0 5px;
   color: var(--light-color);
 }
 
@@ -65,6 +67,8 @@ h3 {
 .h3-dark {
   color: var(--dark-color);
 }
+
+/************************* PARAGRAPHS **************************/
 
 p {
   font-size: 16px;
@@ -79,25 +83,31 @@ p {
   color: var(--light-color);
 }
 
+/* default padding for paragraphs in sections - mobiles */
+.p-padding-mobile {
+  padding: 20px 5px;
+}
+
 /*********************************************************************************************
 ************************************ HEADER + NAVIGATION *************************************
 *********************************************************************************************/
-header {
-  width: 100%;
-  background-color: var(--bg-color-first);
-}
 
-/****************** mobile / tablet menu ******************/
+/* MOBILE VIEWPORT */
 
-.mobile-menu {
+.mobile-menu-icon {
   display: flex;
   justify-content: flex-end;
   padding: 10px 25px;
 }
 
+/* TABLET VIEWPORT */
+/* DESKTOP VIEWPORT */
+
 /*********************************************************************************************
 ************************************** HERO SECTION **************************************
 *********************************************************************************************/
+
+/* MOBILE VIEWPORT */
 
 .hero-content {
   position: relative;
@@ -109,32 +119,26 @@ header {
 }
 
 .hero-content h1 {
-  /* background-color: limegreen; */
   position: absolute;
   bottom: 20px;
   right: 0px;
   padding: 25px;
   text-align: right;
   max-width: 250px;
+  font-size: 45px;
+  font-weight: 700;
+  color: var(--light-color);
 }
+
+/* TABLET VIEWPORT */
+/* DESKTOP VIEWPORT */
 
 /*********************************************************************************************
 ************************************* ABOUT US SECTION ***************************************
 *********************************************************************************************/
 
-.about-us {
-  margin-top: 40px;
-  padding: 20px;
-}
+/* MOBILE VIEWPORT */
 
-/****************** about us - heading + paragraph ******************/
-
-.about-us-text h2,
-.about-us-text p {
-  padding: 20px 5px;
-}
-
-/****************** about us - image ******************/
 .about-us-image-container {
   width: 100%;
 }
@@ -145,37 +149,23 @@ header {
   object-fit: cover;
   border-radius: 5px;
 }
-/****************** about us - mediaqueries ******************/
+
+/* TABLET VIEWPORT */
+/* DESKTOP VIEWPORT */
 
 /*********************************************************************************************
 *********************************** WHAT WE DO SECTION ***************************************
 *********************************************************************************************/
 
-.what-we-do {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--bg-color-first);
-  padding: 40px 20px;
-}
-
-/****************** what we do - heading + paragraph ******************/
-
-.what-we-do h2,
-.what-we-do p {
-  padding: 20px 5px;
-}
-
-/****************** what we do - icons ******************/
+/* MOBILE VIEWPORT */
 
 .what-we-do-icons {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
   gap: 60px;
+  margin: 25px 0;
 }
 
 .what-we-do-icons img {
@@ -183,14 +173,15 @@ header {
   height: 80px;
 }
 
-.icon {
+/* .icon {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
-}
+} */
 
-/****************** what we do - media queries ******************/
+/* TABLET VIEWPORT */
+/* DESKTOP VIEWPORT */
 
 /*********************************************************************************************
 *********************************** OUR TRIPS ************************************************
@@ -253,7 +244,7 @@ header {
 .where-do-you-go-par p {
   padding: 10px 0;
 }
-
+/* TODO Dodělat hover efekt */
 .btn-contact-us a {
   padding: 10px 15px;
   background-color: var(--bg-color-fourth);
@@ -261,4 +252,86 @@ header {
   color: var(--dark-color);
   border-radius: 5px;
   font-weight: 700;
+}
+
+/*********************************************************************************************
+****************************************** REVIEWS *******************************************
+*********************************************************************************************/
+
+.reviews {
+  padding: 50px 20px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.reviews-textbox {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+/****************** reviews - users reviews ******************/
+
+.reviews-users {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.reviews-user-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.reviews-user-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 60%;
+  object-fit: cover;
+  margin: 20px;
+}
+
+.reviews-user-name p {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--dark-color);
+}
+
+/*********************************************************************************************
+****************************************** FOOTER GALLERY ************************************
+*********************************************************************************************/
+
+.footer-gallery-img-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer-gallery-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*********************************************************************************************
+****************************************** CONTACT *******************************************
+*********************************************************************************************/
+.contact {
+  background-color: var(--bg-color-third);
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-btn a {
+  color: var(--a-normal-color);
+}
+
+.contact-rights {
+  color: var(--light-color);
 }
