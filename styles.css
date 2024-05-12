@@ -13,7 +13,7 @@
 
 :root {
   /* Background colors */
-  --bg-body-color: #f2f2f2;
+  --bg-body-color: #fff;
   --bg-color-first: #33292a;
   --bg-color-second: #644b4f;
   --bg-color-third: #333333;
@@ -39,6 +39,9 @@ body {
 .bg-dark-brown {
   background-color: var(--bg-color-first);
 }
+.bg-light-brown {
+  background-color: var(--bg-color-second);
+}
 
 /********************** ELEMENTS SPACING ***********************/
 
@@ -50,12 +53,10 @@ body {
 /************************** HEADINGS ***************************/
 
 .h2-dark {
-  padding: 0 5px;
   color: var(--black-color);
 }
 
 .h2-light {
-  padding: 0 5px;
   color: var(--light-color);
 }
 
@@ -85,8 +86,10 @@ p {
 
 /* default padding for paragraphs in sections - mobiles */
 .p-padding-mobile {
-  padding: 20px 5px;
+  padding: 20px 0;
 }
+
+/************************* IMAGES **************************/
 
 /*********************************************************************************************
 ************************************ HEADER + NAVIGATION *************************************
@@ -97,7 +100,7 @@ p {
 .mobile-menu-icon {
   display: flex;
   justify-content: flex-end;
-  padding: 10px 25px;
+  padding: 10px 20px;
 }
 
 /* TABLET VIEWPORT */
@@ -122,7 +125,7 @@ p {
   position: absolute;
   bottom: 20px;
   right: 0px;
-  padding: 25px;
+  padding: 20px;
   text-align: right;
   max-width: 250px;
   font-size: 45px;
@@ -138,18 +141,16 @@ p {
 *********************************************************************************************/
 
 /* MOBILE VIEWPORT */
-
-.about-us-image-container {
+.about-us-image {
   width: 100%;
 }
 
-.about-us-image-container img {
+.about-us-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
 }
-
 /* TABLET VIEWPORT */
 /* DESKTOP VIEWPORT */
 
@@ -173,12 +174,12 @@ p {
   height: 80px;
 }
 
-/* .icon {
+.icon {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
-} */
+}
 
 /* TABLET VIEWPORT */
 /* DESKTOP VIEWPORT */
@@ -187,16 +188,13 @@ p {
 *********************************** OUR TRIPS ************************************************
 *********************************************************************************************/
 
+/* MOBILE VIEWPORT */
+
 .our-trips {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 20px;
-  margin-top: 40px;
 }
-
-/****************** our trips - gallery ******************/
-
 .image-gallery {
   display: flex;
   flex-direction: column;
@@ -208,43 +206,30 @@ p {
   width: 100%;
   height: 100%;
   border-radius: 5px;
+  object-fit: cover;
 }
 
 .gallery-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  padding: 15px;
   width: 100%;
-  height: 80px;
   background-color: var(--bg-color-fourth);
   border-radius: 5px;
 }
+
+/* TABLET VIEWPORT */
+/* DESKTOP VIEWPORT */
 
 /*********************************************************************************************
 *********************************** WHERE DO YOU WANT TO GO? *********************************
 *********************************************************************************************/
 
-.where-do-you-go {
-  background-color: var(--bg-color-second);
-  padding: 50px 20px;
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+/* MOBILE VIEWPORT */
+
+.btn-contact-us {
+  margin-top: 35px;
 }
 
-/****************** where do you want to go? heading + paragraphs ******************/
-
-.where-do-you-go-textbox {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.where-do-you-go-par p {
-  padding: 10px 0;
-}
-/* TODO Dodělat hover efekt */
 .btn-contact-us a {
   padding: 10px 15px;
   background-color: var(--bg-color-fourth);
@@ -252,31 +237,28 @@ p {
   color: var(--dark-color);
   border-radius: 5px;
   font-weight: 700;
+  transition: background-color ease 1s, color ease 0.5s;
 }
+
+.btn-contact-us a:hover {
+  background-color: var(--a-hover-color);
+  color: var(--light-color);
+}
+
+/* TABLET VIEWPORT */
+/* DESKTOP VIEWPORT */
 
 /*********************************************************************************************
 ****************************************** REVIEWS *******************************************
 *********************************************************************************************/
 
-.reviews {
-  padding: 50px 20px;
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.reviews-textbox {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-/****************** reviews - users reviews ******************/
+/* MOBILE VIEWPORT */
 
 .reviews-users {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin-top: 50px;
 }
 
 .reviews-user-image {
@@ -290,7 +272,6 @@ p {
   height: 100px;
   border-radius: 60%;
   object-fit: cover;
-  margin: 20px;
 }
 
 .reviews-user-name p {
@@ -299,6 +280,9 @@ p {
   font-weight: bold;
   color: var(--dark-color);
 }
+
+/* TABLET VIEWPORT */
+/* DESKTOP VIEWPORT */
 
 /*********************************************************************************************
 ****************************************** FOOTER GALLERY ************************************
@@ -330,6 +314,14 @@ p {
 
 .contact-btn a {
   color: var(--a-normal-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color ease 0.5s, border-color ease 1s;
+}
+
+.contact-btn a:hover {
+  color: var(--a-hover-color);
+  border-bottom-color: var(--light-color);
 }
 
 .contact-rights {
