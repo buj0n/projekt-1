@@ -20,6 +20,6 @@
 ---
 
 Tento projekt je vytvořen Tomášem Bujanským. 
-Pro jakékoliv dotazy nebo zpětnou vazbu prosím kontaktujte
+Pro jakékoliv dotazy nebo zpětnou vazbu mne prosím kontaktujte
 - Email - [Tomáš B.](mailto:tomas.bujansky@gmail.com)
 - Discord - naeriathecz
