@@ -22,12 +22,12 @@
         </div>
 
         <!-- *************************** Desktop menu *************************** -->
-        <ul class="desktop-navigation content-desktop">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">What We Do</a></li>
-          <li><a href="#">Our Trips</a></li>
-          <li><a href="#">Where To Go</a></li>
-          <li><a href="#">Reviews</a></li>
+        <ul class="desktop-navigation content-desktop bg-dark-brown">
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#what-we-do">What We Do</a></li>
+          <li><a href="#our-trips">Our Trips</a></li>
+          <li><a href="#where-do-go">Where To Go</a></li>
+          <li><a href="#reviews">Reviews</a></li>
         </ul>
       </nav>
     </header>
@@ -44,8 +44,8 @@
 
     <!-- *************************** ABOUT US SECTION *************************** -->
 
-    <section class="content-mobile">
-      <div class="about-us-box content-desktop">
+    <section id="about-us">
+      <div class="content about-us-box content-desktop">
         <div class="about-us-text-box">
           <h2 class="h2-dark">About Us</h2>
           <p class="p-padding-mobile">
@@ -73,8 +73,8 @@
 
     <!-- *************************** WHAT WE DO SECTION *************************** -->
 
-    <section class="content-mobile bg-dark-brown">
-      <div class="content-desktop">
+    <section id="what-we-do" class="bg-dark-brown">
+      <div class="content content-desktop">
         <h2 class="h2-light">What we Do</h2>
         <p class="p-padding-mobile p-light">
           Opportunities for challenging hikes and pleasant strolls are scattered
@@ -110,28 +110,44 @@
 
     <!-- *************************** OUR TRIPS SECTION *************************** -->
 
-    <section class="our-trips content-mobile">
-      <div class="image-gallery">
-        <img src="./images/simon-english-48nerZQCHgo-unsplash.jpg" alt="" />
-        <img src="./images/james-wheeler-ZOA-cqKuJAA-unsplash.jpg" alt="" />
-        <img src="./images/daniel-tseng-73lmMKhi2U8-unsplash.jpg" alt="" />
-        <img src="./images/holly-mandarich-UVyOfX3v0Ls-unsplash.jpg" alt="" />
-      </div>
-      <div class="gallery-title"><h3 class="h3-dark">Our Trips</h3></div>
-      <div class="image-gallery">
-        <img src="./images/patrick-szylar-45bM3XGqnDE-unsplash.jpg" alt="" />
-        <img src="./images/chung-yee-tsang-wqxCKM0R6R8-unsplash.jpg" alt="" />
-        <img src="./images/julian-bialowas-ilkTnuMunP8-unsplash.jpg" alt="" />
-        <img src="./images/matej-drha-rbDzMcJsBkY-unsplash.jpg" alt="" />
+    <section id="our-trips" class="content content-desktop">
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="./images/simon-english-48nerZQCHgo-unsplash.jpg" alt="" />
+        </div>
+        <div class="gallery-item">
+          <img src="./images/james-wheeler-ZOA-cqKuJAA-unsplash.jpg" alt="" />
+        </div>
+        <div class="gallery-item">
+          <img src="./images/daniel-tseng-73lmMKhi2U8-unsplash.jpg" alt="" />
+        </div>
+        <div class="gallery-item">
+          <img src="./images/holly-mandarich-UVyOfX3v0Ls-unsplash.jpg" alt="" />
+        </div>
+        <div class="gallery-item gallery-title">
+          <h3 class="h3-dark">Our Trips</h3>
+        </div>
+        <div class="gallery-item">
+          <img src="./images/patrick-szylar-45bM3XGqnDE-unsplash.jpg" alt="" />
+        </div>
+        <div class="gallery-item">
+          <img src="./images/chung-yee-tsang-wqxCKM0R6R8-unsplash.jpg" alt="" />
+        </div>
+        <div class="gallery-item">
+          <img src="./images/julian-bialowas-ilkTnuMunP8-unsplash.jpg" alt="" />
+        </div>
+        <div class="gallery-item">
+          <img src="./images/matej-drha-rbDzMcJsBkY-unsplash.jpg" alt="" />
+        </div>
       </div>
     </section>
 
     <!-- *************************** WHERE DO YOU GO SECTION *************************** -->
 
-    <section class="content-mobile bg-light-brown">
-      <div class="where-do-you-go-box content-desktop">
+    <section id="where-do-go" class="bg-light-brown">
+      <div class="where-go-box content-desktop content">
         <h2 class="h2-light">Where do you want to go?</h2>
-        <div class="where-do-you-go-box-p-btn">
+        <div class="where-go-box-p-btn">
           <p class="p-padding-mobile p-light">
             You’ll find 21 detailed adventure guides, over a hundred practical
             travel tips, book reviews on anything outdoors related, packing
@@ -147,8 +163,8 @@
     </section>
 
     <!-- *************************** REVIEWS SECTION *************************** -->
-
-    <section class="content-mobile content-desktop">
+    <!-- TODO: Mrknout na 2x content-desktop -->
+    <section id="reviews" class="content content-desktop">
       <div class="content-desktop">
         <h2 class="h2-dark">Reviews</h2>
         <p class="p-padding-mobile">
@@ -232,12 +248,12 @@
       </section>
 
       <!-- *************************** CONTACT *************************** -->
-      <section class="content-mobile contact">
+      <section class="content contact">
         <div class="contact-btn">
           <a href="#">Contact</a>
         </div>
         <div class="contact-rights">
-          <p>&copy; 2024 Your Travel Assistant. All Rights Reserved.</p>
+          <h6>&copy; 2024 Your Travel Assistant. All Rights Reserved.</h6>
         </div>
       </section>
     </footer>
