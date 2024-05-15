@@ -16,6 +16,8 @@
 - Začaly práce na desktopové verzi.
 # 13.05.2024 
 - Byla dokončena desktopová verze.
+# 15.05.2024
+- Přejmenování některých tříd na logicčtější jména. Kód je hotov na 99%. 
 
 ---
 
