@@ -1,5 +1,5 @@
 /*********************************************************************************************
-************************************ DEFAULT & REUSABLES VARIABLES ***************************************
+************************************ DEFAULT & REUSABLES VARIABLES ***************************
 *********************************************************************************************/
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
@@ -36,24 +36,23 @@ body {
   background-color: var(--bg-body-color);
 }
 
-.bg-dark-brown {
-  background-color: var(--bg-color-first);
-}
 .bg-light-brown {
   background-color: var(--bg-color-second);
 }
 
 /********************** ELEMENTS SPACING ***********************/
+/* MOBILE VIEWPORT */
 
-.content {
+.mobile-content {
   padding: 50px 20px;
 }
 
 /* DESKTOP VIEWPORT */
 
 @media (min-width: 768px) {
-  .content-desktop {
+  .desktop-content {
     position: relative;
+    width: 75%;
     max-width: 1080px;
     margin: auto;
   }
@@ -92,10 +91,7 @@ h3 {
 @media (min-width: 768px) {
   .h2-dark,
   .h2-light {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 150px;
+    text-align: center;
   }
 }
 
@@ -114,16 +110,12 @@ p {
   color: var(--light-color);
 }
 
-/* default padding for paragraphs in sections - mobiles */
-.p-padding-mobile {
-  padding: 20px 0;
-}
-
 /*********************************************************************************************
 ************************************ HEADER + NAVIGATION *************************************
 *********************************************************************************************/
 header {
   min-height: 68px;
+  background-color: var(--bg-color-first);
 }
 
 /* MOBILE VIEWPORT */
@@ -205,11 +197,16 @@ header {
 *********************************************************************************************/
 
 /* MOBILE VIEWPORT */
-.about-us-image {
+
+.about-us-left-box h2 {
+  margin-bottom: 20px;
+}
+
+.about-us-right-box {
   width: 100%;
 }
 
-.about-us-image img {
+.about-us-right-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -219,19 +216,19 @@ header {
 /* DESKTOP VIEWPORT */
 
 @media (min-width: 768px) {
-  .about-us-box {
+  .about-us-content {
     display: flex;
     gap: 50px;
   }
 
-  .about-us-text-box {
+  .about-us-left-box {
     width: 48%;
   }
 
-  .about-us-text-box h2 {
+  .about-us-left-box h2 {
     justify-content: flex-start;
   }
-  .about-us-image {
+  .about-us-right-box {
     width: 48%;
   }
 }
@@ -240,15 +237,24 @@ header {
 *********************************** WHAT WE DO SECTION ***************************************
 *********************************************************************************************/
 
+.what-we-do {
+  background-color: var(--bg-color-first);
+}
+.what-we-do-content h2 {
+  margin-bottom: 20px;
+}
+
+.what-we-do-content p {
+  margin-bottom: 80px;
+}
+
 /* MOBILE VIEWPORT */
 
 .what-we-do-icons {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   gap: 60px;
-  margin: 25px 0;
 }
 
 .what-we-do-icons img {
@@ -296,7 +302,6 @@ header {
 .gallery-title {
   text-align: center;
   padding: 15px;
-  width: 100%;
   background-color: var(--bg-color-fourth);
   border-radius: 5px;
 }
@@ -306,6 +311,7 @@ header {
   .gallery {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .gallery-item {
@@ -325,6 +331,18 @@ header {
 *********************************** WHERE DO YOU WANT TO GO? *********************************
 *********************************************************************************************/
 
+.where-go {
+  background-color: var(--bg-color-second);
+}
+
+.where-go-content h2 {
+  margin-bottom: 20px;
+}
+
+.where-go-content p {
+  margin-bottom: 20px;
+}
+
 /* MOBILE VIEWPORT */
 
 .btn-contact-us {
@@ -343,18 +361,19 @@ header {
 /* DESKTOP VIEWPORT */
 
 @media (min-width: 768px) {
-  .where-go-box {
+  .where-go-content {
     display: flex;
+    flex-direction: row;
+    gap: 50px;
   }
 
-  .where-go-box > h2 {
+  .where-go-content h2 {
     text-align: justify;
+    width: 25%;
   }
 
-  .where-go-box-p-btn {
-    display: flex;
-    flex-direction: column;
-    margin-left: 80px;
+  .where-go-box {
+    width: 75%;
   }
 
   .btn-contact-us a {
@@ -370,13 +389,18 @@ header {
 ****************************************** REVIEWS *******************************************
 *********************************************************************************************/
 
+.reviews-content h2 {
+  margin-bottom: 20px;
+}
+
 /* MOBILE VIEWPORT */
 
 .reviews-users {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-top: 50px;
+  margin-top: 40px;
+  padding: 10px 0;
 }
 
 .reviews-user-image {
@@ -405,7 +429,7 @@ header {
   .reviews-users-box {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 50px;
   }
 }
 
@@ -415,7 +439,7 @@ header {
 
 /* MOBILE VIEWPORT */
 
-.footer-gallery-img-container {
+.footer-gallery {
   display: flex;
   flex-wrap: wrap;
 }
@@ -424,7 +448,7 @@ header {
   width: 100%;
 }
 
-.footer-gallery-img-container img {
+.footer-gallery-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;

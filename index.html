@@ -13,21 +13,21 @@
 
   <body>
     <!-- *************************** MAIN NAVIGATION *************************** -->
-    <header class="bg-dark-brown">
+    <header>
       <nav>
         <!-- *************************** Mobile / Tablet menu *************************** -->
 
-        <div class="mobile-menu-icon bg-dark-brown">
+        <div class="mobile-menu-icon">
           <img src="./icons/ham-menu.png" alt="Mobile / Tablet menu" />
         </div>
 
         <!-- *************************** Desktop menu *************************** -->
-        <ul class="desktop-navigation content-desktop bg-dark-brown">
-          <li><a href="#about-us">About Us</a></li>
-          <li><a href="#what-we-do">What We Do</a></li>
-          <li><a href="#our-trips">Our Trips</a></li>
-          <li><a href="#where-do-go">Where To Go</a></li>
-          <li><a href="#reviews">Reviews</a></li>
+        <ul class="desktop-navigation desktop-content">
+          <li><a href="#about-nav">About Us</a></li>
+          <li><a href="#what-we-do-nav">What We Do</a></li>
+          <li><a href="#our-trips-nav">Our Trips</a></li>
+          <li><a href="#where-do-go-nav">Where To Go</a></li>
+          <li><a href="#reviews-nav">Reviews</a></li>
         </ul>
       </nav>
     </header>
@@ -36,7 +36,7 @@
 
     <section class="hero-section">
       <div class="hero-content">
-        <div class="content-desktop">
+        <div class="desktop-content">
           <h1>Your Travel Assistant</h1>
         </div>
       </div>
@@ -44,11 +44,11 @@
 
     <!-- *************************** ABOUT US SECTION *************************** -->
 
-    <section id="about-us">
-      <div class="content about-us-box content-desktop">
-        <div class="about-us-text-box">
+    <section id="about-nav" class="about-us">
+      <div class="about-us-content mobile-content desktop-content">
+        <div class="about-us-left-box">
           <h2 class="h2-dark">About Us</h2>
-          <p class="p-padding-mobile">
+          <p>
             Leigh McAdam is a Calgary-based writer, photographer and social
             media enthusiast with over 48,000 followers. Her blog:
             HikeBikeTravel is frequently cited as one of the top travel and
@@ -62,7 +62,7 @@
             except perhaps bungee jumping.
           </p>
         </div>
-        <div class="about-us-image">
+        <div class="about-us-right-box">
           <img
             src="./images/anneliese-phillips-uv4-vl3liKM-unsplash.jpg"
             alt=""
@@ -73,10 +73,10 @@
 
     <!-- *************************** WHAT WE DO SECTION *************************** -->
 
-    <section id="what-we-do" class="bg-dark-brown">
-      <div class="content content-desktop">
+    <section id="what-we-do-nav" class="what-we-do">
+      <div class="what-we-do-content desktop-content mobile-content">
         <h2 class="h2-light">What we Do</h2>
-        <p class="p-padding-mobile p-light">
+        <p class="p-light">
           Opportunities for challenging hikes and pleasant strolls are scattered
           all over this planet; you just need to know where to find them. We do.
           Kilimanjaro, Everest Base Camp, Patagonia, and the Inca Trail are out
@@ -110,8 +110,8 @@
 
     <!-- *************************** OUR TRIPS SECTION *************************** -->
 
-    <section id="our-trips" class="content content-desktop">
-      <div class="gallery">
+    <section id="our-trips-nav">
+      <div class="gallery mobile-content desktop-content">
         <div class="gallery-item">
           <img src="./images/simon-english-48nerZQCHgo-unsplash.jpg" alt="" />
         </div>
@@ -144,73 +144,72 @@
 
     <!-- *************************** WHERE DO YOU GO SECTION *************************** -->
 
-    <section id="where-do-go" class="bg-light-brown">
-      <div class="where-go-box content-desktop content">
+    <section id="where-do-go-nav" class="where-go">
+      <div class="where-go-content mobile-content desktop-content">
         <h2 class="h2-light">Where do you want to go?</h2>
-        <div class="where-go-box-p-btn">
-          <p class="p-padding-mobile p-light">
+        <div class="where-go-box">
+          <p class="p-light">
             You’ll find 21 detailed adventure guides, over a hundred practical
             travel tips, book reviews on anything outdoors related, packing
             lists on a range of outdoor activities including kayaking,
             backpacking and camping as well as honest hotel and B&B reviews.
           </p>
-          <p class="p-padding-mobile p-light">
-            Contact us and we will help you!
-          </p>
+          <p class="p-light">Contact us and we will help you!</p>
           <div class="btn-contact-us"><a href="#">CONTACT US</a></div>
         </div>
       </div>
     </section>
 
     <!-- *************************** REVIEWS SECTION *************************** -->
-    <!-- TODO: Mrknout na 2x content-desktop -->
-    <section id="reviews" class="content content-desktop">
-      <div class="content-desktop">
-        <h2 class="h2-dark">Reviews</h2>
-        <p class="p-padding-mobile">
-          Our amazing clients are the reason we exist, and their reactions to
-          our customized travel experiences and personalized service keep us
-          smiling all day long. Here is just a sampling of what they’ve said:
-        </p>
-      </div>
-      <div class="reviews-users-box">
-        <div class="reviews-users">
-          <div class="reviews-user-image">
-            <img
-              src="./images/kalen-emsley-kGSapVfg8Kw-unsplash.jpg"
-              alt="Kalen Profile Picture"
-            />
-          </div>
-          <div class="reviews-user-text">
-            <p>
-              She has booked two major European trips for us in the past year
-              and every aspect has met, and in most cases exceeded, our
-              expectations. Best prices, best hotels, best itineraries, and best
-              cruises, she does it all. But the most important thing is she
-              remembers the little things that we would do if we were making the
-              plans ourselves.
-            </p>
-          </div>
-          <div class="reviews-user-name"><p>Bertie Norton</p></div>
+    <section id="reviews-nav">
+      <div class="reviews-content mobile-content desktop-content">
+        <div class="reviews-box">
+          <h2 class="h2-dark">Reviews</h2>
+          <p>
+            Our amazing clients are the reason we exist, and their reactions to
+            our customized travel experiences and personalized service keep us
+            smiling all day long. Here is just a sampling of what they’ve said:
+          </p>
         </div>
-        <div class="reviews-users">
-          <div class="reviews-user-image">
-            <img
-              src="./images/jeffrey-keenan-pUhxoSapPFA-unsplash.jpg"
-              alt="Kalen Profile Picture"
-            />
+        <div class="reviews-users-box">
+          <div class="reviews-users">
+            <div class="reviews-user-image">
+              <img
+                src="./images/kalen-emsley-kGSapVfg8Kw-unsplash.jpg"
+                alt="Kalen Profile Picture"
+              />
+            </div>
+            <div class="reviews-user-text">
+              <p>
+                She has booked two major European trips for us in the past year
+                and every aspect has met, and in most cases exceeded, our
+                expectations. Best prices, best hotels, best itineraries, and
+                best cruises, she does it all. But the most important thing is
+                she remembers the little things that we would do if we were
+                making the plans ourselves.
+              </p>
+            </div>
+            <div class="reviews-user-name"><p>Bertie Norton</p></div>
           </div>
-          <div class="reviews-user-text">
-            <p>
-              Leigh McAdam has been making my travel arrangements for about 20
-              years and there is no one else I would trust to arrange my trips
-              and tours. I've also had great fun on a few of the group trips she
-              has arranged - Peru & Machu Picchu and a 10-day cruise out of
-              Venice and diving. It's always an eclectic group of well traveled,
-              interesting people.
-            </p>
+          <div class="reviews-users">
+            <div class="reviews-user-image">
+              <img
+                src="./images/jeffrey-keenan-pUhxoSapPFA-unsplash.jpg"
+                alt="Kalen Profile Picture"
+              />
+            </div>
+            <div class="reviews-user-text">
+              <p>
+                Leigh McAdam has been making my travel arrangements for about 20
+                years and there is no one else I would trust to arrange my trips
+                and tours. I've also had great fun on a few of the group trips
+                she has arranged - Peru & Machu Picchu and a 10-day cruise out
+                of Venice and diving. It's always an eclectic group of well
+                traveled, interesting people.
+              </p>
+            </div>
+            <div class="reviews-user-name"><p>Frank Kinney</p></div>
           </div>
-          <div class="reviews-user-name"><p>Frank Kinney</p></div>
         </div>
       </div>
     </section>
@@ -219,36 +218,36 @@
       <!-- *************************** FOOTER GALLERY *************************** -->
 
       <section class="footer-gallery">
-        <div class="footer-gallery-img-container">
-          <div class="footer-gallery-item">
-            <img
-              src="./images/alexey-fedenkov-BaCZYH9RLmQ-unsplash.jpg"
-              alt="Beach"
-            />
-          </div>
-          <div class="footer-gallery-item">
-            <img
-              src="./images/omer-salom-LoijtQXXNhs-unsplash.jpg"
-              alt="Mountains"
-            />
-          </div>
-          <div class="footer-gallery-item">
-            <img
-              src="./images/vincentiu-solomon-7MH4ped6_Mo-unsplash.jpg"
-              alt="Lakehouse"
-            />
-          </div>
-          <div class="footer-gallery-item">
-            <img
-              src="./images/daniel-tseng-73lmMKhi2U8-unsplash.jpg"
-              alt="Forest"
-            />
-          </div>
+        <!-- <div class="footer-gallery-img-container"> -->
+        <div class="footer-gallery-item">
+          <img
+            src="./images/alexey-fedenkov-BaCZYH9RLmQ-unsplash.jpg"
+            alt="Beach"
+          />
         </div>
+        <div class="footer-gallery-item">
+          <img
+            src="./images/omer-salom-LoijtQXXNhs-unsplash.jpg"
+            alt="Mountains"
+          />
+        </div>
+        <div class="footer-gallery-item">
+          <img
+            src="./images/vincentiu-solomon-7MH4ped6_Mo-unsplash.jpg"
+            alt="Lakehouse"
+          />
+        </div>
+        <div class="footer-gallery-item">
+          <img
+            src="./images/daniel-tseng-73lmMKhi2U8-unsplash.jpg"
+            alt="Forest"
+          />
+        </div>
+        <!-- </div> -->
       </section>
 
       <!-- *************************** CONTACT *************************** -->
-      <section class="content contact">
+      <section class="mobile-content contact">
         <div class="contact-btn">
           <a href="#">Contact</a>
         </div>
