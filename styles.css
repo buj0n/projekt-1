@@ -114,13 +114,13 @@ p {
 ************************************ HEADER + NAVIGATION *************************************
 *********************************************************************************************/
 header {
-  min-height: 68px;
+  /* min-height: 68px; */
   background-color: var(--bg-color-first);
 }
 
 /* MOBILE VIEWPORT */
 
-.mobile-menu-icon {
+.menu-icon {
   display: flex;
   justify-content: flex-end;
   padding: 10px 20px;
@@ -133,7 +133,7 @@ header {
 /* DESKTOP VIEWPORT */
 
 @media (min-width: 768px) {
-  .mobile-menu-icon {
+  .menu-icon {
     display: none;
   }
 
@@ -198,15 +198,15 @@ header {
 
 /* MOBILE VIEWPORT */
 
-.about-us-left-box h2 {
+.about-left h2 {
   margin-bottom: 20px;
 }
 
-.about-us-right-box {
+.about-right {
   width: 100%;
 }
 
-.about-us-right-box img {
+.about-right img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -216,19 +216,19 @@ header {
 /* DESKTOP VIEWPORT */
 
 @media (min-width: 768px) {
-  .about-us-content {
+  .about-content {
     display: flex;
     gap: 50px;
   }
 
-  .about-us-left-box {
+  .about-left {
     width: 48%;
   }
 
-  .about-us-left-box h2 {
+  .about-left h2 {
     justify-content: flex-start;
   }
-  .about-us-right-box {
+  .about-right {
     width: 48%;
   }
 }
@@ -395,7 +395,7 @@ header {
 
 /* MOBILE VIEWPORT */
 
-.reviews-users {
+.reviews-item {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -403,13 +403,13 @@ header {
   padding: 10px 0;
 }
 
-.reviews-user-image {
+.reviews-image {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-.reviews-user-image img {
+.reviews-image img {
   width: 100px;
   height: 100px;
   border-radius: 60%;
@@ -426,9 +426,8 @@ header {
 /* DESKTOP VIEWPORT */
 
 @media (min-width: 768px) {
-  .reviews-users-box {
+  .reviews-list {
     display: flex;
-    flex-direction: row;
     gap: 50px;
   }
 }
